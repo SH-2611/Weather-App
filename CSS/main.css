@@ -1,0 +1,355 @@
+/***** Global Style *****/
+
+:root {
+  --main-color: #009ad8;
+  --main-bg: #1e202b;
+  --secondary-bg: #323544;
+  --text-color: #bfc1c8;
+}
+
+.bg-main-color {
+  background-color: var(--main-color) !important;
+}
+.main-color {
+  color: var(--main-color) !important;
+}
+.text-color {
+  color: var(--text-color) !important;
+}
+.bg-color {
+  background-color: var(--main-bg) !important;
+}
+
+.fw-300 {
+  font-weight: 300;
+}
+.fw-500 {
+  font-weight: 500;
+}
+.fw-600 {
+  font-weight: 600;
+}
+.fw-700 {
+  font-weight: 700;
+}
+.fw-800 {
+  font-weight: 800;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+/***** End Global Style *****/
+
+/*!  Start Index Html   */
+
+/***** Navbar *****/
+
+nav {
+  background-color: var(--main-bg);
+  padding-block: 40px !important;
+}
+nav .navbar-brand img {
+  width: 60px;
+  display: block;
+}
+nav .navbar-toggler {
+  color: white;
+}
+nav .navbar-brand a p:last-child {
+  font-size: 10px;
+}
+nav .navbar-nav a {
+  font-size: 14px;
+  font-weight: 400;
+  padding: 5px 25px !important;
+  border: 2px solid transparent;
+  border-radius: 30px;
+  color: #fff;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+nav .navbar-nav a.current {
+  border-color: #009ad8;
+  color: #009ad8;
+}
+.nav-link:focus,
+.nav-link:hover {
+  border-color: #009ad8;
+  color: #009ad8;
+}
+/***** End Navbar *****/
+
+/***** Landing Search *****/
+.landing-search {
+  background-image: url(../Images/weather3.jpg);
+  background-size: cover;
+  background-position: 50% 80%;
+  position: relative;
+  padding: 70px 0;
+  min-height: 350px;
+}
+.landing-search .find-location {
+  position: relative;
+  margin-bottom: 70px;
+}
+.landing-search input[type="text"] {
+  width: 100%;
+  padding: 15px 50px 15px 20px !important;
+  background: #1e202b;
+  color: white;
+  border-radius: 1.875rem;
+  outline: none;
+  border: none;
+}
+.landing-search input[type="button"] {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  bottom: 5px;
+  padding: 0 40px;
+  border: none;
+  background: #009ad8;
+  padding: 10px 30px !important;
+  border-radius: 30px;
+  color: white;
+}
+/***** End Landing Search *****/
+
+/***** Weather Section *****/
+
+.weather-info .container {
+  margin-top: -190px;
+}
+.weather-current-info .card {
+  background-color: var(--secondary-bg);
+  color: white;
+  border-radius: 15px;
+}
+.weather-current-info .card-body h4 {
+  font-size: 90px;
+  font-weight: 700;
+}
+.weather-current-info .card-body img {
+  width: 130px;
+}
+.weather-current-info .card-body i {
+  font-size: 26px;
+}
+/* ////////////////////// */
+.weather-card-info {
+  display: flex;
+  gap: 15px;
+  overflow: scroll;
+  padding-bottom: 12px;
+}
+.weather-card-info::-webkit-scrollbar {
+  width: 8px;
+}
+.weather-card-info::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+.weather-card-info::-webkit-scrollbar-thumb {
+  background: var(--main-color);
+  border-radius: 10px;
+}
+.weather-card-info .card-info:nth-child(odd) {
+  background-color: var(--secondary-bg);
+}
+.weather-card-info .card-info:nth-child(even) {
+  background-color: #262936;
+}
+.weather-card-info .card-info .card {
+  color: white;
+  background-color: transparent;
+  border-radius: 15px;
+  padding: 40px 60px;
+  width: 250px;
+}
+.weather-card-info .card-body {
+  padding: 0;
+}
+/***** End Weather Section *****/
+
+/***** Footer *****/
+footer {
+  padding: 70px 0;
+  background-color: #262936;
+}
+footer form {
+  position: relative;
+}
+footer form {
+  width: 65%;
+}
+footer input[type="text"] {
+  width: 100%;
+  padding: 15px 50px 15px 20px !important;
+  background: #1e202b;
+  color: white;
+  border-radius: 1.875rem;
+  outline: none;
+  border: none;
+}
+footer input[type="button"] {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  bottom: 5px;
+  padding: 0 40px;
+  border: none;
+  background: #009ad8;
+  padding: 10px 30px !important;
+  border-radius: 30px;
+  color: white;
+}
+footer .links a {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: var(--main-bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--main-color);
+  font-size: 20px;
+  transition: all 0.4s;
+}
+footer .links a:hover {
+  color: var(--main-bg);
+  background-color: var(--main-color);
+}
+footer p {
+  font-size: 14px;
+}
+
+/***** End Footer *****/
+/*!  End Index Html   */
+
+/*!  Start Contact Html   */
+.contact {
+  padding: 80px 0;
+}
+.contact .contact-details .card {
+  background-color: #262936;
+  color: var(--text-color);
+  margin-top: 10px;
+}
+.contact .contact-details .card i {
+  color: var(--main-color);
+}
+.contact .contact-details .card-title {
+  font-size: 14px;
+  font-weight: 300;
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.contact .form-details {
+  padding-left: 70px;
+}
+.contact .form-details .title h2 {
+  font-size: 36px;
+  font-weight: 300;
+  color: #fff;
+}
+.contact .form-details .title p {
+  font-size: 14px;
+  font-weight: 300;
+  color: var(--text-color);
+}
+.contact .form-details form input {
+  padding: 15px;
+  margin-bottom: 10px;
+  color: #fff;
+  border: 2px solid #393c48;
+  background: transparent;
+  border-radius: 30px;
+}
+.contact .form-details form input::placeholder,
+.contact .form-details form textarea::placeholder {
+  color: var(--text-color);
+}
+.contact .form-details form input:hover,
+.contact .form-details form textarea:hover,
+.contact .form-details form input:focus,
+.contact .form-details form textarea:focus {
+  border: 2px solid var(--main-color);
+}
+.contact .form-details form textarea {
+  padding: 15px;
+  border: 2px solid #393c48;
+  background: transparent;
+  border-radius: 30px;
+}
+
+/*!  End Contact Html   */
+
+/****** Media Query ****/
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1100px;
+    margin: auto;
+  }
+}
+
+@media (min-width: 992px) {
+}
+@media (max-width: 768px) {
+  footer form {
+    width: 100%;
+  }
+  .weather-current-info .card-body h4 {
+    font-size: calc(3rem + 8vw);
+  }
+
+  .contact .form-details {
+    padding: 0;
+  }
+}
+
+/*? Loading Animation */
+
+.loading {
+  position: fixed;
+  z-index: 9999;
+  inset: 0;
+  background-color: #272b30e3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loader {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: inline-block;
+  border-top: 4px solid #fff;
+  border-right: 4px solid transparent;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+  position: relative;
+}
+.loader::after {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border-left: 4px solid #09c;
+  border-bottom: 4px solid transparent;
+  animation: rotation 0.5s linear infinite reverse;
+}
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

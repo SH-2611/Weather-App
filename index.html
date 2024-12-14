@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WeatherVerse</title>
+    <link rel="shortcut icon" href="./Images/Weather.ico" type="image/x-icon" />
+
+    <!-- ========== Start Font Awesome ========== -->
+    <link rel="stylesheet" href="./CSS/all.min.css" />
+    <!-- ========== End Font Awesome ========== -->
+
+    <!-- ========== Start BootStrap CSS ========== -->
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css" />
+    <!-- ========== End BootStrap CSS ========== -->
+
+    <!-- ========== Start Main Css ========== -->
+    <link rel="stylesheet" href="./CSS/main.css" />
+    <!-- ========== End Main Css ========== -->
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <div class="navbar-brand d-flex gap-3 text-white" href="#">
+          <img src="./Images/logo@2x.png" alt="logo Weather" />
+          <a>
+            <p class="m-0 fw-700">Weather</p>
+            <p class="m-0 fw-300">tagline goes here</p>
+          </a>
+        </div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul
+            class="navbar-nav d-flex gap-4 pt-3 mt-lg-0 ms-auto mb-2 mb-lg-0 text-capitalize text-color"
+          >
+            <li class="nav-item">
+              <a class="nav-link current" href="#">home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">news</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">live camera</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Photos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="contactPage" href="./contact.html">contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <!-- ========== Start Landing Search ========== -->
+
+      <section class="landing-search">
+        <div class="container">
+          <form class="find-location w-75 m-auto">
+            <input
+              type="text"
+              placeholder="Find Your Location..."
+              id="search"
+            />
+            <input type="button" value="Find" id="submit" />
+          </form>
+        </div>
+      </section>
+
+      <!-- ========== End Landing Search ========== -->
+
+      <!-- ========== Start Weather Card Info ========== -->
+      <section class="weather-info py-5 bg-color">
+        <div class="container">
+          <div class="weather-current-info mb-4">
+            <div class="Card-Info" id="rowCurrentData"></div>
+          </div>
+
+          <!-- More Cards -->
+          <div class="row">
+            <div class="col-12">
+              <div class="weather-card-info" id="weekData">
+                <div class="card-info"></div>
+
+                <!-- Repeat for other cards -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ========== End Weather Card Info  ========== -->
+    </main>
+
+    <!-- ========== Start Footer ========== -->
+
+    <footer>
+      <div class="container">
+        <div
+          class="footer-media mb-4 d-flex flex-wrap align-items-center justify-content-between"
+        >
+          <form class="find-location mb-4 mb-lg-0">
+            <input
+              type="text"
+              placeholder="Enter Your Email To Subscribe"
+              id="email"
+            />
+            <input type="button" value="Subscribe" id="subscribe" />
+          </form>
+          <ul
+            class="links list-unstyled m-0 px-2 d-flex align-items-center gap-2"
+          >
+            <li>
+              <a href="#"> <i class="fa-brands fa-facebook"></i> </a>
+            </li>
+            <li>
+              <a href="#"> <i class="fa-brands fa-twitter"></i> </a>
+            </li>
+            <li>
+              <a href="#"> <i class="fa-brands fa-google-plus-g"></i> </a>
+            </li>
+            <li>
+              <a href="#"> <i class="fa-brands fa-pinterest-p"></i> </a>
+            </li>
+          </ul>
+        </div>
+        <p class="copy-right text-color">
+          Copyright 2014 Company name. Designed by Themezy. All rights reserved
+        </p>
+      </div>
+    </footer>
+
+    <div class="loading d-none">
+      <span class="loader"></span>
+    </div>
+
+    <!-- ========== End Footer ========== -->
+
+    <!-- ========== Start Bootstrap js ========== -->
+    <script src="./JS/bootstrap.bundle.min.js"></script>
+    <!-- ========== End Bootstrap js ========== -->
+
+    <!-- ========== Start Main Js ========== -->
+    <script src="./JS/index.js"></script>
+    <!-- ========== End Main Js ========== -->
+  </body>
+</html>
